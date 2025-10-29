@@ -6,8 +6,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   
-  modules: ['@pinia/nuxt', '@vite-pwa/nuxt'],
+  modules: ['@pinia/nuxt', '@vite-pwa/nuxt', 'shadcn-nuxt'],
   
+  shadcn: {
+    prefix: '',
+    componentDir: './app/components/ui'
+  },
   css: ['~/app/assets/css/tailwind.css'],
   
   vite: {
